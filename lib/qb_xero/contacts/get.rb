@@ -1,7 +1,7 @@
 require 'active_interaction'
 require 'xeroizer'
 module QbXero
-  class Contact::Get < ActiveInteraction::Base
+  class Contacts::Get < ActiveInteraction::Base
 
     hash :xero_auth do
       string :oauth_consumer_key
