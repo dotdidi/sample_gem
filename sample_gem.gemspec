@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "sample_gem"
   spec.version       = SampleGem::VERSION
   spec.authors       = ["Didi"]
-  spec.email         = ["diotanara@gmail.com\ngit config --global user.name Didi\n\n"]
+  spec.email         = ["diotanara@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Sample Gem"
+  spec.description   = "Gem for sampling how do gems works"
+  spec.homepage      = "https://github.com/dotdidi/sample_gem"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -30,6 +30,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "xeroizer"
+  spec.add_dependency "active_interaction"
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"

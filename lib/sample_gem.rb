@@ -1,5 +1,5 @@
 require "sample_gem/version"
 
-module SampleGem
-  # Your code goes here...
-end
+$: << File.expand_path(File.dirname(__FILE__))
+
+require 'qb_xero/contacts/create'
